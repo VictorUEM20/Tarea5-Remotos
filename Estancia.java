@@ -12,6 +12,14 @@ public class Estancia {
 	private int nPuertas;
 	private int nVentanas;
 	
+	public void estancia(String nombre, int metrosCuadrados, int nPuertas, int nVentanas) {
+		this.nombre = nombre;
+		this.metrosCuadrados = metrosCuadrados;
+		this.nPuertas = nPuertas;
+		this.nVentanas = nVentanas;
+	}
+	
+	
 	public String getNombre() {
 		return nombre;
 	}
