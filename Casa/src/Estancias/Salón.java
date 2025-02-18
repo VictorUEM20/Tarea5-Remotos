@@ -11,6 +11,7 @@ public class Salón extends Estancia{
 	boolean tieneTerraza;
 	int superficieTerraza;
 	
+	
 	public void setNTomasCorriente (int nTomasCorriente) {
 		this.nTomasCorriente = nTomasCorriente;
 	}
@@ -29,9 +30,9 @@ public class Salón extends Estancia{
 		}
 	}
 	
-	public String tieneTerraza () {
+	public String escribirTerraza () {
 		if (tieneTerraza) {
-			return "Con terraza de " + superficieTerraza + " metros cuadrados.";
+			return "Con terraza de " + this.superficieTerraza + " metros cuadrados.";
 		}else {
 			return "Sin terraza.";
 		}
@@ -41,8 +42,8 @@ public class Salón extends Estancia{
 		this.superficieTerraza = superficieTerraza;
 	}
 	
-	public String escribirTerraza () {
-		return "Salón "+ this.tieneTerraza();
+	public String escribirSalón () {
+		return "Salón "+ this.escribirEstancia() +this.escribirTerraza();
 	}
 
 }
