@@ -12,7 +12,7 @@ public class Estancia {
 	private int nPuertas;
 	private int nVentanas;
 	
-	public void estancia(String nombre, int metrosCuadrados, int nPuertas, int nVentanas) {
+	public Estancia(String nombre, int metrosCuadrados, int nPuertas, int nVentanas) {
 		this.nombre = nombre;
 		this.metrosCuadrados = metrosCuadrados;
 		this.nPuertas = nPuertas;
@@ -50,5 +50,10 @@ public class Estancia {
 	
 	public void setNVentanas (int nVentanas) {
 		this.nVentanas = nVentanas;
+	}
+	
+	public String escribirEstancia() {
+		return this.nombre + " con " + this.nPuertas + " puertas y "+ this.nVentanas + " ventanas" +
+	  " de " + this.metrosCuadrados + " metros cuadrados";
 	}
 }
