@@ -19,4 +19,12 @@ public class Baño extends Estancia {
 					throw new ArithmeticException("Por favor, de una respuesta del tipo B/D");
 				}
 	}
+	
+	public String tieneBañeraODucha () {
+		if (bañera) {
+			return "Tiene bañera";
+		}else {
+			return "Tiene ducha";
+		}
+	}
 }
